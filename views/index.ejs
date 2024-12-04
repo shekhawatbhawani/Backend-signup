@@ -8,23 +8,17 @@
 </head>
 <body>
   <h1>This is My Home Page</h1>
-  <button>Generate</button>
+ 
 
-  <form action="/form-data" method="post">
-    <input type="text" name="name" placeholder="Enter name"> <br><br> 
-    <input type="number" name="age" placeholder="Enter Age"> <br><br> 
-    <input type="text" name="grade" placeholder="Enter grade"> <br><br> 
-    <input type="address" name="address" placeholder="Enter address"> <br><br> 
-    <input type="submit" value="Submit">
-  </form>
-
+  <button>Generate Random User</button>
 
   <script>
-    let button = document.querySelector('button');
-    button.addEventListener('click', () => {
-      let create = fetch("./generate")
-      alert("Added 10 random users...")
-    });
+    let btn = document.querySelector("button");
+    btn.addEventListener("click",async()=>{
+      await fetch("/generate")
+    })
   </script>
+ 
+     
 </body>
 </html>
