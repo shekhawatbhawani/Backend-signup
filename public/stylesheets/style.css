@@ -1,3 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #6f80f3;
+}
 h1{
-  color: lime;
+  font-size: 25px;
+
+}
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  text-align: center;
+  list-style-type: none;
+}
+li a{
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  font: bold;
+
+}
+li a :hover{
+  text-decoration: underline;
 }
